@@ -1,5 +1,5 @@
-from sqlalchemy import null
 
+import json
 
 class node:
     data=[]
@@ -15,11 +15,13 @@ class node:
 
 
     def __gettingLinkedTo__(linkedTo):
+        aux=[]
+        
+        for i in linkedTo:
+            x=i.get[0]
+            y=i.get[1]
+            aux.append((x,y))
+        return aux
 
-        return null
 
-
-    ''''
-    comentario
     
-    '''
